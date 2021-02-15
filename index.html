@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="java.css">
+    <link rel="shortcut icon" href="js.png" type="image/x-icon">
+    <title>Javascript</title>
+</head>
+<body>
+    <div id="elso" class="container">
+        <header class="text-center">
+            <h1>Mit tud a JavaScript?</h1>    
+            <hr>       
+        </header>
+        <div>
+            <button type="button" class="btn btn-outline-info"
+            onclick="document.getElementById('demo').innerHTML = Date()">
+            Mai dátum és idő megjelenítése</button>
+            <button type="button" class="btn btn-outline-info"
+            onclick="document.getElementById('demo').innerHTML =' ' ">
+            Dátum törlése</button>
+            <p id="demo"></p>
+            <a href="https://www.w3schools.com/js/tryit.asp?filename=tryjs_myfirst" target="_blank"><img src="w3kicsi.PNG"
+                 alt="w3schools" class="rounded-circle border border-success"></a>
+            <hr>
+        </div>
+        <div>
+            <button class="btn btn-outline-info" onclick="document.getElementById('kepem').src='pic_bulbon.gif'">Kapcsold fel!</button>
+
+            <img id="kepem" src="pic_bulboff.gif" style="width:100px">
+
+            <button class="btn btn-outline-info" onclick="document.getElementById('kepem').src='pic_bulboff.gif'">Kapcsold le!</button><br>
+            
+            <a href="https://www.w3schools.com/js/tryit.asp?filename=tryjs_intro_lightbulb" target="_blank"><img src="w3kicsi.PNG" 
+                alt="w3schools" class="rounded-circle border border-success"></a>
+            <hr>
+        </div>
+        <div>
+            <p>JavaScript megváltoztatja a HTML elemek stílusát.</p>
+            <p id="demo2">Megváltoztathatod a bekezdésed kinézetét.</p>
+
+            <button type="button" class="btn btn-outline-info" onclick="document.getElementById('demo2').style.fontSize='35px'">Betűméret</button>
+            <button type="button" class="btn btn-outline-info" onclick="document.getElementById('demo2').style.color='red'">Betűszín</button>
+            <button type="button" class="btn btn-outline-info" onclick="document.getElementById('demo2').style.fontFamily='Times New Roman'">Betűtípus</button>
+            <button type="button" class="btn btn-outline-info" onclick="document.getElementById('demo2').style.border='dashed'">Szegély</button>
+            <button type="button" class="btn btn-outline-info" onclick="document.getElementById('demo2').style.padding='20px'">Belső margó</button>
+            <button type="button" class="btn btn-outline-info" onclick="document.getElementById('demo2').style.margin='20px'">Külső margó</button>
+            <button type="button" class="btn btn-outline-info" onclick="document.getElementById('demo2').style.backgroundColor='black'">Háttérszín</button><br><br>
+        </div>
+        <footer>
+            <a href="https://www.w3schools.com/js/tryit.asp?filename=tryjs_intro_style" target="_blank"><img src="w3kicsi.PNG"
+                alt="w3schools" class="rounded-circle border border-success"></a>
+        </footer>
+    </div>
+</body>
+</html>
