@@ -1,3 +1,7 @@
 body{
     background-color: darkgreen;
 }
+.dark-mode{
+    background-color: black;
+    color:blue;
+}
