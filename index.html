@@ -9,20 +9,42 @@
     <link rel="shortcut icon" href="js.png" type="image/x-icon">
     <title>Javascript</title>
 </head>
-<body>
+<body id="teljes">
+    <nav class="navbar navbar-light bg-light">
+        <form class="container-fluid justify-content-start">
+            <button class="btn btn-outline-success me-2" type="button">Változtass!</button>
+            <button type="button" class="btn btn-outline-info"
+                onclick="document.getElementById('teljes').style.fontSize='40px'">Szöveg nagyítása</button>
+                <button type="button" class="btn btn-outline-info"
+                onclick="document.getElementById('teljes').style.fontSize=''">Szöveg alapértelmezett</button>
+            <button class="btn btn-outline-info" type="button" onclick="myFunction()">Éjszakai mód/Nappali mód</button>
+            <button class="btn btn-outline-info" type="button" onclick="kepki()">Képek ki</button>
+            <button class="btn btn-outline-info" type="button" onclick="kepbe()">Képek be</button>
+        </form>
+    </nav>
     <script>
+        const kepem = document.getElementById(kepem);
         function myFunction() {
            var element = document.body;
            element.classList.toggle("dark-mode");
         }
+        function kepki() {
+            if (kepem.style.visibility == "visible") {
+                kepem.style.visibility = "hidden";
+            }
+        }
+        function kepbe() {
+            if (kepem.style.visibility == "hidden") {
+                kepem.style.visibility = "visible";
+            }
+        }
+        
     </script>
     <div class="container bg-light p-3 my-4">
         <header class="text-center">
             <h1>Mit tud a JavaScript?</h1>  
             <button class="btn btn-block btn btn-outline-warning" type="button" onclick="alert('Az oldal készítője: Köbli Róbert')">Szerző</button><br>
             <button class="btn btn-block btn btn-outline-warning" type="button" onclick="window.print()">Oldal nyomtatása</button><br>
-            <button class="btn btn-outline-info" type="button" onclick="myFunction()">Éjszakai mód</button>
-            <button class="btn btn-outline-info" type="button" onclick="myFunction()">Nappali mód</button>
             <hr>       
         </header>
         <div>
@@ -34,7 +56,7 @@
             Dátum törlése</button>
             <p id="demo"></p>
             <a href="https://www.w3schools.com/js/tryit.asp?filename=tryjs_myfirst" target="_blank"><img src="w3kicsi.PNG"
-                 alt="w3schools" class="rounded-circle border border-success"></a>
+                 alt="w3schools" class="rounded-circle border border-success" ></a>
             <hr>
         </div>
         <div>
@@ -44,7 +66,7 @@
 
             <button class="btn btn-outline-info" onclick="document.getElementById('kepem').src='pic_bulboff.gif'">Kapcsold le!</button><br>
             
-            <a href="https://www.w3schools.com/js/tryit.asp?filename=tryjs_intro_lightbulb" target="_blank"><img src="w3kicsi.PNG" 
+            <a href="https://www.w3schools.com/js/tryit.asp?filename=tryjs_intro_lightbulb" target="_blank" ><img src="w3kicsi.PNG" 
                 alt="w3schools" class="rounded-circle border border-success"></a>
             <hr>
         </div>
@@ -52,7 +74,7 @@
             <p>JavaScript megváltoztatja a HTML elemek stílusát.</p>
             <p id="demo2">Megváltoztathatod a bekezdésed kinézetét.</p>
 
-            <button type="button" class="btn btn-outline-info" onclick="document.getElementById('demo2').style.fontSize='35px'">Betűméret</button>
+            <button type="button" class="btn btn-outline-info" onclick="document.getElementById('demo2').style.fontSize='50px'">Betűméret</button>
             <button type="button" class="btn btn-outline-info" onclick="document.getElementById('demo2').style.color='red'">Betűszín</button>
             <button type="button" class="btn btn-outline-info" onclick="document.getElementById('demo2').style.fontFamily='Times New Roman'">Betűtípus</button>
             <button type="button" class="btn btn-outline-info" onclick="document.getElementById('demo2').style.border='dashed'">Szegély</button>
@@ -61,7 +83,7 @@
             <button type="button" class="btn btn-outline-info" onclick="document.getElementById('demo2').style.backgroundColor='black'">Háttérszín</button><br><br>
         </div>
         <footer>
-            <a href="https://www.w3schools.com/js/tryit.asp?filename=tryjs_intro_style" target="_blank"><img src="w3kicsi.PNG"
+            <a href="https://www.w3schools.com/js/tryit.asp?filename=tryjs_intro_style" target="_blank" ><img src="w3kicsi.PNG"
                 alt="w3schools" class="rounded-circle border border-success"></a>
         </footer>
         
